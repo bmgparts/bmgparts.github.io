@@ -64,6 +64,19 @@
       text-align: center;
       font-size: 0.9rem;
     }
+    #colorBtn {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #colorBtn:hover {
+      background-color: #005fa3;
+    }
   </style>
 </head>
 <body>
@@ -98,11 +111,25 @@
       <a href="tel:07777128898">Call Us</a>
       <a href="mailto:bmg@bmgparts.co.uk">Email Us</a>
       <a href="https://wa.me/447777128898" target="_blank">WhatsApp Us</a>
+      <br>
+      <button id="colorBtn">Click to Change Background</button>
     </div>
   </div>
 
   <footer>
     &copy; 2025 BMG Parts Express. All rights reserved.
   </footer>
+
+  <script>
+    // Show welcome message
+    window.onload = function() {
+      alert("Welcome to BMG Parts Express!");
+    };
+
+    // Change background color on button click
+    document.getElementById("colorBtn").onclick = function() {
+      document.body.style.backgroundColor = "#e0f7fa";
+    };
+  </script>
 </body>
 </html>
